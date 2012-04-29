@@ -1,1 +1,23 @@
-<p>this is an example template located in <code>views/example.erb</code></p>
+<p>This is an example template located in <code>views/example.erb</code> - check the source out!</p>
+
+<ul>
+  <% ["just", "some", "words"].each do |word| %>
+    <li><%= word %></li>
+  <% end %>
+</ul>
+
+<ol>
+  <% 5.times do |counter| %>
+    <li>say <%= counter + 1 %>!</li>
+  <% end %>
+</ol>
+
+<% name = "Muneca" %>
+
+<p>
+  <% if name == "Muneca" %>
+    <%= "Hi, #{name}!" %>
+  <% else %>
+    Oi!
+  <% end %>
+</p>
