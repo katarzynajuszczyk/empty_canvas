@@ -1,6 +1,6 @@
 <p>This is an example template located in <code>views/example.erb</code> - check the source out!</p>
 
-<h2>Loops and conditionals</h2>
+<h2>Loops, conditionals and partials</h2>
 
 <ul>
   <% ["just", "some", "words"].each do |word| %>
@@ -23,6 +23,8 @@
     Oi!
   <% end %>
 </p>
+
+<%= erb :example_partial %>
 
 <h2>Lorem ipsum</h2>
 
