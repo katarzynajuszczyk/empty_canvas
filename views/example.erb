@@ -1,5 +1,7 @@
 <p>This is an example template located in <code>views/example.erb</code> - check the source out!</p>
 
+<h2>Loops and conditionals</h2>
+
 <ul>
   <% ["just", "some", "words"].each do |word| %>
     <li><%= word %></li>
@@ -21,3 +23,25 @@
     Oi!
   <% end %>
 </p>
+
+<h2>Lorem ipsum</h2>
+
+<p>A lone sentence: <%= lorem %></p>
+
+<p>Two words: <%= lorem :words, 2 %>.</p>
+
+<p>Two sentences: <%= lorem :sentences, 2 %></p>
+
+<h3>Two paragraphs:</h3>
+<%= lorem :paragraphs, 2 %>
+
+<h3>Two paragraphs, each five sentences long:</h3>
+<%= lorem :paragraphs, 2, :sentences => 5 %>
+
+<h3>List elements with random length</h3>
+
+<ul>
+  <% 5.times do %>
+    <li><%= lorem :sentences, rand(7)+1 %></li>
+  <% end %>
+</ul>

@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
-gem 'shotgun'
+gem 'forgery'
+
+group :development do
+  gem 'shotgun'
+end
