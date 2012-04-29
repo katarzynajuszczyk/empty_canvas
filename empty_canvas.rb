@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'forgery'
+require_relative './lib/helpers'
 
 set :erb, :layout => :layout
 
@@ -11,15 +12,4 @@ get '/:view' do
   erb :"#{params[:view]}"
 end
 
-helpers do
-
-  def lorem(*params)
-    *params = :sentence if params.empty?
-
-    options = params.last.is_a?(Hash) ? params.pop : {}
-    options.merge!(:html => true)
-
-    Forgery(:lorem_ipsum).text(*params, options)
-  end
-
-end
+helpers EmptyCanvas::Helpers
