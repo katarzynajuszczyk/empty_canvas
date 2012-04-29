@@ -11,7 +11,7 @@ class EmptyCanvas
     end
 
     def lorem_picture(params = {})
-      source_array = ['http://lorempixum.com']
+      source_array = ['http://lorempixel.com']
 
       source_array << '/g' if params[:grey]
 
