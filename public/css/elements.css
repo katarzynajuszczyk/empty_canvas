@@ -1,0 +1,32 @@
+/*shadow */
+
+.shadow,
+header .search-wrapper 
+{
+    -moz-box-shadow: 0 0 5px #e6e5e5;
+    -webkit-box-shadow: 0 0 5px #e6e5e5;
+    box-shadow: 0 0 5px #e6e5e5;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#e6e5e5')"; 
+    /* For IE 5.5 - 7 */ 
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#e6e5e5');
+      
+    }
+
+/* focus box with shadow */
+.focus-box
+  {
+      padding:8px;
+      border:1px solid #fff;
+      background: #f2f2f2;  
+
+      -moz-box-shadow: 0 5px 10px 3px #e6e6e6;
+      -webkit-box-shadow: 0 5px 10px 3px #e6e6e6;
+      box-shadow: 0 5px 10px 3px #e6e6e6;
+      /* For IE 8 */
+      -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#e6e6e6')"; 
+      /* For IE 5.5 - 7 */ 
+      filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#e6e6e6');
+      
+      }
+      

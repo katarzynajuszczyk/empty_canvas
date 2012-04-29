@@ -1,0 +1,148 @@
+header,
+#MainNav > div,
+#main-footer > section,
+#content
+{
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    }
+
+#logo {
+    background: url(../images/logo.png) no-repeat;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 23px;
+    margin-left: 6px;
+    text-indent: -99999px;
+    width: 185px;
+    height: 50px;
+}
+
+
+header .search-wrapper {
+    height: 28px;
+    background: #d9d9da;
+    padding: 1px;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    line-height: 28px;
+}
+
+header .search-input {
+    display: block;
+    line-height: 26px;
+    height: 26px;
+    width: 135px;
+    border: 1px solid #f6f6f7;
+    background: white;
+    padding: 0 10px;
+    float: left;
+    border-right: none;
+    outline:none;
+}
+
+header .search-submit {
+    display: block;
+    float:right;
+    height: 28px;
+    width: 36px;
+    border: 1px solid #f6f6f7;
+    border-left: none;
+    background: white url('../Images/search-icon.png') no-repeat center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+    
+header .search-wrapper label.prompt
+{
+    position: absolute;
+    top:0;
+    left: 15px;
+    display:block;
+    line-height:31px;
+    color: #9c9897;
+    }
+
+
+
+/* main menu */
+    
+#MainNav h1 
+{
+    display:none;
+    }
+
+    
+#MainNav 
+{
+    background: url(../images/nav-bg.png) repeat-x 0 0;
+    height:72px;
+       }
+
+#MainNav > div > ul > li 
+{
+    float: left;
+    position: relative;
+}
+#MainNav a 
+{
+    display:block; 
+    width:146px;
+    padding: 18px 25px 7px;
+    margin-top: 10px;
+    font-size:11px;
+    text-transform: uppercase; 
+    text-decoration: none;
+    color: #000;
+    font-weight:bold;
+    }
+
+
+/* three column layout */
+
+.left.column, .right.column,
+.right > section, .right > aside
+{
+    float: left;
+    }
+
+.left.column
+{
+    width: 200px;
+    position: relative;
+    }
+
+.right.column > aside
+{
+    width: 160px;
+    padding-left:20px;
+    }
+    
+.right.column 
+{
+    width:760px;
+    padding-left:20px;
+    }
+
+.right > section 
+{
+    width:580px;
+    }
+
+           
+/* no filter */
+.ie9 #MainNav a:hover.blue, 
+.ie9 #MainNav a.active.blue,
+.ie9 #MainNav a:hover.orange, 
+.ie9 #MainNav a.active.orange,
+.ie9 #MainNav a:hover.green, 
+.ie9 #MainNav a.active.green,
+.ie9 #MainNav a:hover.yellow, 
+.ie9 #MainNav a.active.yellow,
+.ie9 #MainNav a:hover.pink, 
+.ie9 #MainNav a.active.pink
+{
+    filter:none;
+    }
