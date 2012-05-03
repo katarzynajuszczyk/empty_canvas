@@ -1,0 +1,53 @@
+%p
+  This is an example template located in
+  %code views/example_haml.erb
+  \- check the source out!
+
+%h2 Loops, conditionals and partials
+
+%ul
+  - ["just", "some", "words"].each do |word|
+    %li= word
+
+%ol
+  - 5.times do |counter|
+    %li say #{counter + 1}!
+
+- name = "Muneca"
+
+%p
+  - if name == "Muneca"
+    hi #{name}!
+  - else
+    oi!
+
+= haml :example_partial
+
+%h2 Lorem ipsum
+
+%h3 Images from lorempixel
+= lorem_picture
+= lorem_picture :grey => true
+= lorem_picture :width => 600, :height => 400, :category => :city
+
+%p
+  %strong a lone sentence:
+  #{lorem}
+
+%p
+  %strong two words:
+  #{lorem :words, 2}
+
+%p
+  %strong two sentences:
+  #{lorem :sentences, 2}
+
+%h3 two paragraphs
+= lorem :paragraphs, 2
+
+%h3 List items with random content length
+%ul
+  - 5.times do
+    %li
+      #{lorem :sentences, rand(7)+1}
+      %strong #{lorem :words, rand(5)+1}

@@ -1,6 +1,14 @@
 class EmptyCanvas
   module Helpers
 
+    def erb_or_haml(view)
+      begin
+        erb view, :layout => :layout
+      rescue
+        haml view
+      end
+    end
+
     def lorem(*params)
       *params = :sentence if params.empty?
 
