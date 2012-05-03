@@ -5,7 +5,7 @@ class EmptyCanvas
       begin
         erb view, :layout => :layout
       rescue
-        haml view
+        haml view, :layout => :layout
       end
     end
 
